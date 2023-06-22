@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functional pagination</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="card-content" style="display: none">
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/163063688/photo/happy-little-nerd.jpg?s=612x612&w=0&k=20&c=7C6Soo5moWN3TSZVb2uFrAoBFPZjL9IKj2BM9yy3Hss=" alt="image1"></div>
+        <div class="card-info">
+          <h3>Card 01</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/186883548/photo/surprised-little-nerd.jpg?s=612x612&w=0&k=20&c=kI9zV5tSO-Osg7OXzOR7zaxUAvtV_DAEi_ZTShodaIw=" alt="image2"></div>
+        <div class="card-info">
+          <h3>Card 02</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/1297227934/photo/confident-cool-guy-in-glasses-for-vision-poses-on-an-isolated-background-with-copy-space.jpg?s=612x612&w=0&k=20&c=N8auq9wJpkSafXXha69KmMCRRX7rg3XyJA935OAAo1Q=" alt="image3"></div>
+        <div class="card-info">
+          <h3>Card 03</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/485007122/photo/smiling-brunette-wearing-sun-glasses.jpg?s=612x612&w=0&k=20&c=wbWZs9CbFDq4GDYRtlc_-kVdNsm8Ytt9-o17WhxujBo=" alt="image4"></div>
+        <div class="card-info">
+          <h3>Card 04</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/1467324289/photo/beautiful-cheerful-brunette-young-female-with-red-painted-lips-wears-glasses-and-warm-sweater.jpg?s=612x612&w=0&k=20&c=M819uoJXFbzA5ZBNYb-WRnegD-ThbIj5gemrc-Zizqo=" alt="image5"></div>
+        <div class="card-info">
+          <h3>Card 05</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+   
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/626607364/photo/woman-enjoying-success.jpg?s=612x612&w=0&k=20&c=c4JEn7C-R68BSbOexGqbR0XgS6ZhYkmWWTi_KeLRtG0=" alt="image6"></div>
+        <div class="card-info">
+          <h3>Card 06</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/1282100736/photo/young-woman-stock-photo.jpg?s=612x612&w=0&k=20&c=XldMSDLVHC25atKxqAkpmF6tXE9d3WFHeubMBUz8wPQ=" alt="image7"></div>
+        <div class="card-info">
+          <h3>Card 07</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+   
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/1291247572/photo/portrait-young-woman-stock-photo.jpg?s=612x612&w=0&k=20&c=dcfXKwMnBSUsJaSnkvhLzkqVAdttfI2uvhR6h7pmttw=" alt="image8"></div>
+        <div class="card-info">
+          <h3>Card 08</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+   
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/1133400524/photo/horizontal-portrait-of-a-beautiful-girl-in-bright-business-clothes-isolated-on-a-light.jpg?s=612x612&w=0&k=20&c=On4vDPlWh88Dnkt0HNFOBf-mUk0icuttndDmuqzI5xo=" alt="image9"></div>
+        <div class="card-info">
+          <h3>Card 09</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/117002807/photo/one-attractive-indian-woman.jpg?s=612x612&w=0&k=20&c=EpSPv1PXytfNOaR_Eqn22X1BwRtTZf0ziwBsSyTi4ho=" alt="image10"></div>
+        <div class="card-info">
+          <h3>Card 10</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/913957364/photo/portrait-of-beautiful-blonde-woman.jpg?s=612x612&w=0&k=20&c=XSVwfNYH1amYt6pLYwI6bTaGM2KBzBDtQ-Nx869RcUY=" alt="image11"></div>
+        <div class="card-info">
+          <h3>Card 11</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/1325012959/photo/headshots-woman.jpg?s=612x612&w=0&k=20&c=IkNbKnjlxwKA12oGlik00MfLhXEUPpfKl0LzLwzVre8=" alt="image12"></div>
+        <div class="card-info">
+          <h3>Card 12</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+   
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/626438274/photo/uneasy-asian-woman.jpg?s=612x612&w=0&k=20&c=kRSDXxX-jsvFctFYPPqrCNxpFt0wroMrhWuj2II38i8=" alt="image13"></div>
+        <div class="card-info">
+          <h3>Card 13</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+   
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/1206181992/photo/portrait-of-happy-beautiful-asian-woman-smiling-and-posing.jpg?s=612x612&w=0&k=20&c=4cNjWzsUbCpF7juQ6Rr8SBTp7A-ArJS4mg84C7KEH_w=" alt="image14"></div>
+        <div class="card-info">
+          <h3>Card 14</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+   
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/1149906329/photo/portrait-of-young-beautiful-cute-cheerful-girl-smiling-looking-at-camera-over-white-background.jpg?s=612x612&w=0&k=20&c=waafQOUkFTxsQbPhvw1ISgwoDbu1mBLC9JGX0p38t24=" alt="image15"></div>
+        <div class="card-info">
+          <h3>Card 15</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+   
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/1213659834/photo/young-beautiful-asian-girl-wearing-casual-sweatshirt-with-hoodie-over-white-background-happy.jpg?s=612x612&w=0&k=20&c=Yj90_s-p4CZMhrDHT8dFQaXXu5ilmtKV0vuh28KyvA4=" alt="image16"></div>
+        <div class="card-info">
+          <h3>Card 16</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/1331799592/photo/portrait-of-beautiful-young-asian-girl-model-long-hair-in-casual-summer-clothes-smile-happy.jpg?s=612x612&w=0&k=20&c=a5MJyvfSey1BqQdk4F1g1kbMmf70ea0pkkn-EapbW0s=" alt="image17"></div>
+        <div class="card-info">
+          <h3>Card 17</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+   
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/905221532/photo/pleased-smiling-freckled-female-with-ginger-hair-tied-in-knot-wears-casual-clothes-and-eyewear.jpg?s=612x612&w=0&k=20&c=3cN7QKb_1b1tXSM-GE9f-CwOPRECG-AjLQAPEieFVnM=" alt="image18"></div>
+        <div class="card-info">
+          <h3>Card 18</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/1391730472/photo/young-asian-woman-reminiscing-about-love-wearing-winter-red-sweater-isolated.jpg?s=612x612&w=0&k=20&c=-__V4VKkNI0IHCxc82R-qaxZQXrWSm8BmD2rwQWbn80=" alt="image19"></div>
+        <div class="card-info">
+          <h3>Card 19</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+   
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/1341905620/photo/cheerful-young-brunette-woman-girl-in-casual-red-hoodie-eyeglasses-posing-isolated-on-grey.jpg?s=612x612&w=0&k=20&c=PAXv9dqJzQ1ta1eDNsNlb4KvC9-J_yfpoyMgGGab4rk=" alt="image20"></div>
+        <div class="card-info">
+          <h3>Card 20</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/821633992/photo/studio-shot-of-young-asian-man-wearing-red-jacket-with-matching-red-eyeglasses-against-gray.jpg?s=612x612&w=0&k=20&c=mT6d_OFGgRPBSiN8d4B6w0LZrG_k07Q-KibItrCmYEs=" alt="image21"></div>
+        <div class="card-info">
+          <h3>Card 21</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/1127509142/photo/brunette-surprised-cheerful-young-woman-wearing-red.jpg?s=612x612&w=0&k=20&c=4vYK730tGUJoNF-cn1Nskk4pCaHhuVxf0lpRBHm0bx8=" alt="image22"></div>
+        <div class="card-info">
+          <h3>Card 22</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+   
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/172736365/photo/cute-little-boy-makes-peace-sign.jpg?s=612x612&w=0&k=20&c=nTKvUt8jOvEpP4bQAo63LUilPTrHjwTW4deZeOuhARI=" alt="image23"></div>
+        <div class="card-info">
+          <h3>Card 23</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/163144846/photo/pretty-business-woman-in-glasses.jpg?s=612x612&w=0&k=20&c=HEaTrj984EKqI1TH-wS9OfyRybPmF3dxYsaNedXXUjk=" alt="image24"></div>
+        <div class="card-info">
+          <h3>Card 24</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/1364876770/photo/funny-woman-wearing-a-beret-and-eyeglasses.jpg?s=612x612&w=0&k=20&c=U20Hjvw0GLEF4w6jB8XQk-WE9QFjpU8fi2mUPHKLUOQ=" alt="image25"></div>
+        <div class="card-info">
+          <h3>Card 25</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+   
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/186035036/photo/young-woman-with-aura-shining-around-head.jpg?s=612x612&w=0&k=20&c=Bgp8jBgI9gM239KTHhhU2fnPvFQUvf_9i7GKllWflXM=" alt="image26"></div>
+        <div class="card-info">
+          <h3>Card 26</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+   
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/1359684426/photo/casual-senior-man.jpg?s=612x612&w=0&k=20&c=F5KsNBb-IWSHKy-9tvAtl9ahgP-IxVT-w-G9NWOUnkU=" alt="image27"></div>
+        <div class="card-info">
+          <h3>Card 27</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/492628227/photo/casual-young-woman-looks-to-side.jpg?s=612x612&w=0&k=20&c=DR4mZxkGPWT6P0-FC1DDjtiMrkfgDVdo5uc66RHjUiA=" alt="image28"></div>
+        <div class="card-info">
+          <h3>Card 28</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/962294520/photo/portrait-of-a-businesswoman.jpg?s=612x612&w=0&k=20&c=nUeqSAuc5Sl_yIAg7d3FKZ46RZeZcF_Am5v3Xv9c1nU=" alt="image29"></div>
+        <div class="card-info">
+          <h3>Card 29</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+          </p>
+        </div>
+      </div>
+   
+    <div class="card">
+      <div class="card-image"><img src="https://media.istockphoto.com/id/518757510/photo/businesswoman-in-eyeglasses.jpg?s=612x612&w=0&k=20&c=ZbFLF4q4xDmWI3CAH0bpACwQFzds0S9r-QOutydlIzU=" alt="image30"></div>
+      <div class="card-info">
+        <h3>Card 30</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse architecto iusto, ullam eligendi dolorum sed accusantium quasi sit amet.
+        </p>
+      </div>
+    </div>
+  </div>
+      
+    <div class="pagination">
+      <li class="page-item previous-page disable"><a class="page-link" href="#">Prev</a></li>
+      <li class="page-item current-page active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item dot"><a class="page-link" href="#">....</a></li>
+      <li class="page-item current-page"><a class="page-link" href="#">5</a></li>
+      <li class="page-item current-page"><a class="page-link" href="#">6</a></li>
+      <li class="page-item dot"><a class="page-link" href="#">....</a></li>
+      <li class="page-item current-page"><a class="page-link" href="#">10</a></li>
+      <li class="page-item next-page"><a class="page-link" href="#">Next</a></li>
+    </div>
+  </div>
+
+
+  <!-- <script type="text/javascript">
+  
+  </script> -->
+
+
+  <script src="./index.js"></script>
+</body>
+</html>
